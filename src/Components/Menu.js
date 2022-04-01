@@ -1,21 +1,33 @@
 import { faIceCream, faUtensils, faWineGlass } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useState } from 'react'
 import { Tab, Tabs } from 'react-bootstrap'
 import { Platos, Bebidas, Postres } from "../data/data"
 
 
 const Menu = () => {
 
+    const [clickedImg, setClickedImg] = useState(null);
+
+    const [currentIndex, setCurrentIndex] = useState(null);
+
+    const handleClick = (img, index) => {
+        setCurrentIndex(index);
+        setClickedImg(img);
+    };
+
     const itemsMenu = (productos) => {
-        const Menu = productos.map(({ img, name, value }) => (
+
+        const Menu = productos.map(({ img, name, value }, index) => (
             <div>
                 <div class="box-event-modern">
 
                     <div className="event-item-modern articulo">
                         <div id='imgArticulo'>
-                            <img src={img} width="100px" alt='imagenes'/>
+                            <img src={img} width="200px" height="100px" alt='imagenes'
+                                onClick={() => handleClick(img, index)} />
                         </div>
+
                         <div id='desArticulo'>
 
                             <p className="event-time">{value}</p>
@@ -28,7 +40,18 @@ const Menu = () => {
                 </div>
             </div>
         ))
-        return Menu
+        return <>
+            {Menu}
+            <div>
+                {clickedImg && (
+                    <Modal
+                        clickedImg={clickedImg}
+                        setClickedImg={setClickedImg}
+
+                    />
+                )}
+            </div>
+        </>
     }
 
     return (
@@ -67,6 +90,22 @@ const Menu = () => {
             </section>
         </div>
     )
+}
+
+const Modal = ({ clickedImg, setClickedImg }) => {
+    const handleClick = (e) => {
+        if (e.target.classList.contains("dismiss")) {
+            setClickedImg(null);
+        }
+    };
+
+    return<div className="overlay dismiss" onClick={handleClick}>
+        <img src={clickedImg} alt="bigger pic" />
+        <span className="dismiss" onClick={handleClick}>
+            x
+        </span>
+    </div>
+
 }
 
 export default Menu

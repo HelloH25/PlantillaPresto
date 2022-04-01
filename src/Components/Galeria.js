@@ -11,6 +11,7 @@ const Galeria = () => {
         setCurrentIndex(index);
         setClickedImg(src);
     };
+    
 
     const handelRotationRight = () => {
         const totalLength = galeria.length;

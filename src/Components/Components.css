@@ -57,8 +57,11 @@
 }
 
 #imgArticulo{
+    margin-right:15px;
+    padding-top: 25px;
     display: inline-block;
     width: 400px;
+    cursor: pointer;
 }
 #desArticulo{
     display: inline-block;
