@@ -56,7 +56,7 @@ const Menu = () => {
 
     return (
         <div>
-            <section className="section section-lg bg-gray-1">
+            <section className="section section-lg bg-gray-1" id="Menu">
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12'>

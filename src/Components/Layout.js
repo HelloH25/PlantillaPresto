@@ -13,6 +13,7 @@ const Layout = () => {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto justify-content-center" >
                                 <Nav.Link><Link to="/">Inicio</Link></Nav.Link>
+                                <a href='/#Menu' target="_self" className='nav-link'>Menú</a>
                                 <Nav.Link><Link to="Nosotros">Nosotros</Link></Nav.Link>
                                 <Nav.Link><Link to="Contacto">Contacto</Link></Nav.Link>
                             </Nav>
