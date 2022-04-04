@@ -20,7 +20,7 @@ const Menu = () => {
 
         const Menu = productos.map(({ img, name, value }, index) => (
             <div>
-                <div class="box-event-modern">
+                <div className="box-event-modern">
 
                     <div className="event-item-modern articulo">
                         <div id='imgArticulo'>

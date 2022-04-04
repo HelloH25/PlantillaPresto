@@ -7,8 +7,6 @@ import Productos from '../Components/Productos'
 import Frecuentes from '../images/Frecuentes'
 import Menu from '../Components/Menu'
 import Galeria from '../Components/Galeria'
-import PiePagina from '../Components/PiePagina'
-import RedesSociales from '../Components/RedesSociales'
 import Footer from '../Components/Footer'
 
 
