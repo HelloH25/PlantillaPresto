@@ -18,7 +18,7 @@ const Menu = () => {
 
     const itemsMenu = (productos) => {
 
-        const Menu = productos.map(({ img, name, value }, index) => (
+        const Menu = productos.map(({ img, name, value, descripcion }, index) => (
             <div>
                 <div className="box-event-modern">
 
@@ -29,12 +29,13 @@ const Menu = () => {
                         </div>
 
                         <div id='desArticulo'>
-
-                            <p className="event-time">{value}</p>
-                            <h4 className="event-item-modern-title"><a href="/">{name}</a></h4>
-                            <div className="event-item-modern-text">
-                                <p>The most popular drink in Venice: refreshing, easygoing &…happy! Perfect to be sipped as an “Aperitivo” just before dinner - delightful!</p>
-                            </div>
+                            <center>
+                                <p className="event-time">{value}</p>
+                                <h4 className="event-item-modern-title"><a href="/">{name}</a></h4>
+                                <div className="event-item-modern-text">
+                                    <p>{descripcion}</p>
+                                </div>
+                            </center>
                         </div>
                     </div>
                 </div>
@@ -99,7 +100,7 @@ const Modal = ({ clickedImg, setClickedImg }) => {
         }
     };
 
-    return<div className="overlay dismiss" onClick={handleClick}>
+    return <div className="overlay dismiss" onClick={handleClick}>
         <img src={clickedImg} alt="bigger pic" />
         <span className="dismiss" onClick={handleClick}>
             x

@@ -6,7 +6,7 @@ import pechuga from "../images/productos/platos/PechugaPlancha.jpg"
 import baSalsa from "../images/productos/platos/BagreSalsa.jpg"
 import Mojarra from "../images/productos/platos/Mojarra.jpg"
 import MojarraAsada from "../images/productos/platos/MojarraAsada.jpg"
-import Mojarrita from "../images/productos/platos/Mojarrita.jpg"
+import CachamaFrita from "../images/productos/platos/CachamaFrita.jpg"
 import robalo from "../images/productos/platos/RobaloMarinero.jpg"
 import caSudad from "../images/productos/platos/CachamaSudada.jpg"
 import cazuela from "../images/productos/platos/Cazuela.jpg"
@@ -32,77 +32,92 @@ const Contactme = {
 const Platos = [
     {
         img: sancocho,
-        name: "producto4",
-        value: 50000
+        name: "Sancocho de Gallina",
+        descripcion:"Minimo 4 personas, acompañado de presa, arroz y patacon",
+        value: 30000
     },
     {
         img: arroz,
-        name: "producto1",
-        value: 50000
+        name: "Arroz",
+        descripcion: "Arroz mixto minimo 4 personas, acompañado de papas a la francesa",
+        value: 30000
     },
     {
         img: cerAgridulce,
-        name: "producto3",
-        value: 50000
+        name: "Cerdo agridulce",
+        descripcion:"Acompañada de ensalada de la casa, 2 patacones, arroz y vaso de limonada",
+        value: 25000
     },
     {
         img: churrasco,
-        name: "producto4",
-        value: 50000
+        name: "Churrasco",
+        descripcion:"Acompañada de ensalada de la casa, papas a la francesa, arroz y vaso de limonada",
+        value: 25000
     },
     {
         img: costillas,
-        name: "producto1",
+        name: "Costillitas BBQ",
+        descripcion:"Acompañada de ensalada de la casa, 2 patacones, arroz y vaso de limonada",
         value: 50000
     },
     {
         img: pechuga,
-        name: "producto3",
+        name: "Pechuga a la plancha",
+        descripcion:"Acompañada de ensalada de la casa, papas a la francesa, arroz y vaso de limonada",
         value: 50000
     },
     {
         img: baSalsa,
-        name: "producto4",
+        name: "Bagre en salsa",
+        descripcion:"Acompañada de ensalada de la casa, 2 patacones, arroz y vaso de limonada",
         value: 50000
     },
     {
         img: Mojarra,
-        name: "producto4",
-        value: 50000
+        name: "Mojarra frita",
+        descripcion:"Acompañada de ensalada de la casa, 2 patacones, arroz y vaso de limonada",
+        value: 25000
     },
     {
         img: MojarraAsada,
-        name: "producto3",
-        value: 50000
+        name: "Mojarra asada",
+        descripcion:"Acompañada de ensalada de la casa, 2 patacones, arroz y vaso de limonada",
+        value: 25000
     },
     {
-        img: Mojarrita,
-        name: "producto4",
-        value: 50000
-    },
-    {
-        img: robalo,
-        name: "producto4",
-        value: 50000
+        img: CachamaFrita,
+        name: "Cachama Frita",
+        descripcion:"Acompañada de ensalada de la casa, 2 patacones, arroz y vaso de limonada",
+        value: 25000
     },
     {
         img: caSudad,
-        name: "producto3",
-        value: 50000
+        name: "Cachama Sudada",
+        descripcion:"Acompañada de ensalada de la casa, 2 patacones, arroz y vaso de limonada",
+        value: 25000
+    },
+    {
+        img: robalo,
+        name: "Robalo",
+        descripcion:"Acompañada de ensalada de la casa, 2 patacones, arroz y vaso de limonada",
+        value: 27000
     },
     {
         img: cazuela,
-        name: "producto4",
-        value: 50000
+        name: "Cazuela de mariscos",
+        descripcion:"Acompañada 2 patacones, arroz y vaso de limonada",
+        value: 33000
     },
     {
         img: Hamburguesa,
-        name: "producto4",
-        value: 50000
+        name: "Hamburguesa",
+        descripcion:"Acompañada papas a la francesa y vaso de limonada",
+        value: 15000
     },
     {
         img: salchipapa,
-        name: "producto3",
+        name: "Salchipapa",
+        descripcion:"150 gr de salchicha zenu y 400 gr de papa",
         value: 50000
     }
 ]

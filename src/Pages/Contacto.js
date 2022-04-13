@@ -47,7 +47,7 @@ const Contacto = () => {
               <div class="box-icon-classic">
                 <div class="box-icon-inner decorate-rectangle"><span class="icon-xl linearicons-paper-plane"></span></div>
                 <div class="box-icon-caption">
-                  <h4><a href="mailto:#">info@demolink.org</a></h4>
+                  <h4><a href="mailto:Guata_09@hotmail.com">info@demolink.org</a></h4>
                   <p>Feel free to email us your questions</p>
                 </div>
               </div>
